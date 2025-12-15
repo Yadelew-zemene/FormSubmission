@@ -1,0 +1,259 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+
+.App-header {
+  height: 60px;
+}
+
+
+.user-inf,
+.addtional-info,
+.Other\ detail,
+textarea,
+.btn {
+  background-color: #ffffff;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+h3 {
+  text-align: center;
+  margin-top: 30px;
+  color: #2c3e50;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #444;
+}
+
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.4);
+}
+
+
+.addtional-info input[type="radio"],
+.addtional-info input[type="checkbox"] {
+  margin-right: 6px;
+  margin-left: 10px;
+}
+
+.addtional-info label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+
+select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.button {
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+#reset {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+#reset:hover {
+  background-color: #c0392b;
+}
+
+
+#submit {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+#submit:hover {
+  background-color: #27ae60;
+}
+
+
+@media (max-width: 768px) {
+  .user-inf,
+  .addtional-info,
+  .Other\ detail,
+  .btn {
+    margin: 15px;
+    padding: 20px;
+  }
+}
+.user-inf{
+    background-color: #93f99b;
+}
+.addtional-info{
+    background-color:bisque;
+}
+/* ===== User File & Feedback Section ===== */
+.Other-detail,
+.message {
+  max-width: 700px;
+  margin: 24px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.Other-detail > div,
+.message > div {
+  margin-bottom: 18px;
+}
+
+
+.Other-detail label,
+.message label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+
+.Other-detail input[type="text"],
+.Other-detail input[type="file"],
+.Other-detail select {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+}
+
+.Other-detail input[type="file"] {
+  padding: 8px;
+  cursor: pointer;
+}
+
+
+.Other-detail select {
+  cursor: pointer;
+}
+
+
+.Other-detail input:focus,
+.Other-detail select:focus,
+.message textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+.message textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 14px 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  resize: vertical;
+}
+
+.message textarea::placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+
+.Other-detail input:hover,
+.Other-detail select:hover,
+.message textarea:hover {
+  border-color: #9ca3af;
+}
+
+
+body.dark .Other-detail,
+body.dark .message {
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+body.dark .Other-detail label,
+body.dark .message label {
+  color: #d1d5db;
+}
+
+body.dark .Other-detail input,
+body.dark .Other-detail select,
+body.dark .message textarea {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+body.dark .message textarea::placeholder {
+  color: #a1a1aa;
+}
